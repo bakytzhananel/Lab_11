@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE insert_many_users(
 AS $$
 DECLARE
     i INT := 1;
-    phone_pattern TEXT := '^[0-9+\-() ]{7,20}$';  -- Example validation
+    phone_pattern TEXT := '^[0-9+\-() ]{7,20}$';  
 BEGIN
     invalid_entries := '{}';
 
